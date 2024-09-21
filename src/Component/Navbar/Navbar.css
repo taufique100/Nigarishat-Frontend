@@ -1,19 +1,56 @@
 .navbar-content{
     width: 100%;
-    padding: 30px 30px;
-    border: 1px solid red;
+    padding: 20px 30px;
 }
 .navbar-content > img{
     width: 150px;
     height: 50px;
 }
 
-.navbar-content > input{
+.filter-input{
     width: 50%;
-    background-color: #F4F4FF;
+    background-color: #e2e2f9;
     padding: 5px 10px;
-    outline: none;
-    border: unset;
     box-shadow: 0px 8px 10px 0px #09093705;
     border-radius: 6px;
+    height: 40px;
+    color: #09093766;
+    cursor: pointer;
+}
+
+.filter-input > input:focus,
+.filter-input > input:active{
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+}
+.filter-input > input{
+    flex-grow: 1;
+    width: 70%;
+    height: 100%;
+    outline: none;
+    border: unset;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+    padding-left: 5px;
+}
+
+.icons-groups{
+    width: fit-content;
+    height: fit-content;
+}
+
+.icons-wrapper{
+    width: 45px;
+    height: 45px;
+    background-color: #e2e2f9;
+    border-radius: 6px;
+    color: #090937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-wrapper:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

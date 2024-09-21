@@ -1,0 +1,21 @@
+.books_container{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 20px;
+}
+
+.books_container > div > span{
+    color: #EF6B4A;
+    font-size: 20px;
+    font-weight: 700;
+}
+.books_container > div > span:hover{
+    color: #EF6B4A70;
+    cursor: pointer;
+
+}
+.books_container > div > h1{
+    color: #090937;
+    font-size: 32px;
+    font-weight: 700;
+}
