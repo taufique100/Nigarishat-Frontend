@@ -1,21 +1,22 @@
 import react from 'react'
-import './App.css'
-import Navbar from './Component/Navbar/Navbar'
-import Footer from './Component/Footer/Footer'
-import Home from './Pages/Home/Home'
+import StoreContextProvider from './Component/ContextAPI/StoreContextProvider'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './Component/Layout/Layout'
+import Home from './Pages/Home/Home'
+import './App.css'
 
 function App() {
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Navigate to={'home'} />} />
-        <Route path="/" element={<Layout />} >
-          <Route path="home" element={<Home />} />
-        </Route>
-      </Routes>
+      <StoreContextProvider>
+        <Routes>
+          <Route path="/" element={<Navigate to={'home'} />} />
+          <Route path="/" element={<Layout />} >
+            <Route path="home" element={<Home />} />
+          </Route>
+        </Routes>
+      </StoreContextProvider>
     </>
   )
 }

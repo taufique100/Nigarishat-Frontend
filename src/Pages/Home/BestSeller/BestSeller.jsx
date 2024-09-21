@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import bookImage from '../../../assets/book1.png'
 import bookImage2 from '../../../assets/book2.png'
 import './BestSeller.css'
 import BookCard from '../../../Component/BookCard/BookCard';
+import StoreCotext from '../../../Component/ContextAPI/StoreContext';
+import ViewAllBook from '../../ViewAllBook/ViewAllBook';
 
 const bestSellers = [
     {
@@ -99,14 +101,23 @@ const bestSellers = [
 
 
 export default function BestSeller() {
+    const { viewAllModalShow, setViewAllModalShow } = useContext(StoreCotext);
+
+    const handleShowModal = () => {
+        setViewAllModalShow(true)
+    }
+
     return (
-        <div className="books_container">
-            <div className='d-flex align-items-center justify-content-between'>
-                <h1>Best Seller</h1>
-                <span>View All</span>
+        <>
+            <ViewAllBook/>
+            <div className="books_container">
+                <div className='d-flex align-items-center justify-content-between'>
+                    <h1>Best Seller</h1>
+                    <span onClick={handleShowModal}>View All</span>
+                </div>
+                <BookCard books={bestSellers} />
             </div>
-            <BookCard books={bestSellers}/>
-        </div>
+        </>
     );
 }
 
