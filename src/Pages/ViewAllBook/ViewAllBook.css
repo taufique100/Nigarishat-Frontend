@@ -1,17 +1,39 @@
-.offcanvas.offcanvas-end.viewDetails_container{
-    width: 75%;
+
+.view_allcategory{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: start;
 }
 
-.offcanva_title{
-    color: #090937;
+.category_book_title{
     font-size: 24px;
     font-weight: 700;
+    color: #090937;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
     cursor: pointer;
 }
 
+
+.view_all_container{
+    margin-top: 6rem;
+}
+
 @media screen and (max-width:576px) {
-    .offcanvas.offcanvas-end.viewDetails_container{
-        margin-top: 5rem;
-        width: 100%;
+    .view_all_container{
+        margin-top: 9rem;
+    }
+    .view_allcategory{
+        justify-content: center;
+    }
+    .view_allcategory > div{
+        width: 90%;
+    }
+    .view_allcategory > div > img{
+        width: 70%;
     }
 }

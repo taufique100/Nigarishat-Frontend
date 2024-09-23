@@ -16,6 +16,8 @@
 .discount_desc{
     position: absolute;
     left: 70px;
+    z-index: 1;
+
 }
 
 .discount_desc > p:first-child{

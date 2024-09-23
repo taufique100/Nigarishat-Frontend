@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className='navbar m-0 p-0'>
+    <nav className='navbar position-fixed w-100 bg-white top-0 m-0 p-0'>
       <div className='navbar-content d-flex align-items-center justify-content-between gap-2'>
         <img
           onClick={() => navigate('/')}

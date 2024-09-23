@@ -1,10 +1,8 @@
 import React, { useContext } from 'react'
-import bookImage from '../../../assets/book1.png'
-import bookImage2 from '../../../assets/book2.png'
 import './BestSeller.css'
 import BookCard from '../../../Component/BookCard/BookCard';
 import StoreCotext from '../../../Component/ContextAPI/StoreContext';
-import ViewAllBook from '../../ViewAllBook/ViewAllBook';
+import { useNavigate } from 'react-router-dom';
 
 const bestSellers = [
     {
@@ -100,22 +98,33 @@ const bestSellers = [
 ];
 
 
-export default function BestSeller() {
+export default function BestSeller({ type, books }) {
+    const navigate = useNavigate();
     const { viewAllModalShow, setViewAllModalShow } = useContext(StoreCotext);
 
     const handleShowModal = () => {
         setViewAllModalShow(true)
     }
 
+    const handleRedirectToViewAll = () => {
+        navigate('/home/view-all',{
+            state:{
+                title:'Best Seller'
+            }
+        })
+    }
+
     return (
         <>
-            <ViewAllBook/>
             <div className="books_container">
                 <div className='d-flex align-items-center justify-content-between'>
                     <h1>Best Seller</h1>
-                    <span onClick={handleShowModal}>View All</span>
+                    {/* <span onClick={handleShowModal}>View All</span> */}
+                    <span onClick={handleRedirectToViewAll}>View All</span>
                 </div>
-                <BookCard books={bestSellers} />
+                <div className='card_wrapper px-2 py-2 d-flex gap-2'>
+                    <BookCard books={bestSellers} />
+                </div>
             </div>
         </>
     );

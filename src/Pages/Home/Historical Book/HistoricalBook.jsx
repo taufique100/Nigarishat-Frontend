@@ -1,8 +1,10 @@
 import React from 'react'
 import BookCard from '../../../Component/BookCard/BookCard';
 import './HistoricalBook.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function HistoricalBook() {
+    const navigate = useNavigate()
     const mixedBooks = [
         {
             id: 1,
@@ -140,16 +142,26 @@ export default function HistoricalBook() {
             discountRate: '20%',
         },
     ];
-    
 
+    const handleRedirectToViewAll = () => {
+        navigate('/home/view-all', {
+            state: {
+                title: 'Histocial Books'
+            }
+        })
+    }
 
     return (
-        <div className="books_container">
-            <div className='d-flex align-items-center justify-content-between'>
-                <h1>Historical Book</h1>
-                <span>View All</span>
+        <>
+            <div className="books_container">
+                <div className='d-flex align-items-center justify-content-between'>
+                    <h1>Historical Book</h1>
+                    <span onClick={handleRedirectToViewAll}>View All</span>
+                </div>
+                <div className='card_wrapper py-2 px-2 d-flex gap-2'>
+                    <BookCard books={mixedBooks} />
+                </div>
             </div>
-            <BookCard books={mixedBooks} />
-        </div>
+        </>
     )
 }

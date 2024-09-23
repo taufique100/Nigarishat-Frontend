@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import imageNotAvaible from '../../assets/imageNotAvailable.png'
 import './BookCard.css'
+import StoreCotext from '../ContextAPI/StoreContext'
 
 export default function BookCard({books}) {
-    console.log(books)
+    const {  setViewAllModalShow, setSingleBookDetails } = useContext(StoreCotext)
+    
+    const handleShowBookDetails=(book)=>{
+        setViewAllModalShow(true)
+        setSingleBookDetails(book)
+        // console.log('bookDetails', book)
+
+    }
+
   return (
     <>
-         <div className='card_wrapper py-2 d-flex gap-2'>
                 {books?.map(book => (
-                    <div key={book.id} className="book_wapper">
+                    <div key={book.id} onClick={()=>handleShowBookDetails(book)} className="book_wapper">
                         <img src={book.image || imageNotAvaible} alt={book.title} />
                         <p className='book_title'>{book.title}</p>
                         <p>{book.author}</p>
@@ -21,7 +29,8 @@ export default function BookCard({books}) {
                         </div>
                     </div>
                 ))}
-            </div>
+         {/* <div className='card_wrapper py-2 d-flex gap-2'>
+            </div> */}
     </>
   )
 }
