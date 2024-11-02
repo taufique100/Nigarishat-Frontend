@@ -1,0 +1,126 @@
+.order_book_price_details{
+    background-color: #f0f0f0;
+    padding: 24px 24px;   
+}
+
+.backArrow > img{
+    width: 20px;
+}
+.backArrow{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.order_price_card{
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+}
+
+.order_price_card > h1{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.order-details{
+    width: 400px;
+    height: fit-content;
+}
+
+.order-details > h1{
+    border-bottom: 1px solid #00000030;
+}
+.order-details > p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 4rem;
+}
+
+.address_list > span{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.book-details-card > img{
+    width: 120px;
+    height: 180px;
+}
+
+.book-details-card h1{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.original_price{
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+    text-decoration-line: line-through;
+}
+
+.sell_price{
+    font-size: 20px;
+    font-weight: 600;
+    color: #090937;
+}
+
+.percentage_rate{
+    color: #388e3c;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.noOf_items > button{
+    border: 1px solid #cccccc;
+    padding: 2px 2px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    outline: none;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.noOf_items input{
+    border: 1px solid #cccccc;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+.place_order_btn{
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    outline: none;
+    border: unset;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #ef6b4a;
+}
+
+.place_order_btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (max-width:576px) {
+    .group-card-price{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-details{
+        width: 100%;
+    }
+}

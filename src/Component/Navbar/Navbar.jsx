@@ -42,10 +42,10 @@ export default function Navbar() {
           <div className="icons-wrapper" onClick={() => navigate('/profile')} aria-label="User Profile">
             <FaRegUser fontSize={20} />
           </div>
-          <div className="icons-wrapper" onClick={() => navigate('/favorites')} aria-label="Favorites">
+          <div className="icons-wrapper" onClick={() => navigate('/add-to-card')} aria-label="Favorites">
             <CiHeart fontSize={24} />
           </div>
-          <div className="icons-wrapper" onClick={() => navigate('/cart')} aria-label="Shopping Cart">
+          <div className="icons-wrapper" onClick={() => navigate('/order')} aria-label="Shopping Cart">
             <MdOutlineShoppingCart fontSize={20} />
           </div>
         </div>

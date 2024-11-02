@@ -4,18 +4,23 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { LiaAngleLeftSolid } from 'react-icons/lia';
 import './BookDetail.css'
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { AiOutlineThunderbolt } from 'react-icons/ai';
 import { MdOutlineShoppingCart } from 'react-icons/md';
 
 export default function BookDetail() {
   const { viewAllModalShow, setViewAllModalShow, singleBookDetails } = useContext(StoreCotext);
   const { state } = useLocation();
+  const navigate = useNavigate();
 
   const handleClose = () => {
     setViewAllModalShow(false)
   }
 
+  const handleNavigate = () => {
+    navigate('/home/place-order')
+    setViewAllModalShow(false)
+  }
   console.log('state', state)
 
   return (
@@ -30,7 +35,7 @@ export default function BookDetail() {
               <img src={singleBookDetails?.image} alt="book details" />
             </div>
             <button className='buyNow'> <MdOutlineShoppingCart fontSize={20} /> Add To Card</button>
-            <button className='addTocard'> <AiOutlineThunderbolt /> Buy Now</button>
+            <button onClick={handleNavigate} className='addTocard'> <AiOutlineThunderbolt /> Buy Now</button>
             <div className='book-details-btn-group w-100 d-flex flex-column align-items-start gap-2 gap-sm-2'>
             </div>
           </div>

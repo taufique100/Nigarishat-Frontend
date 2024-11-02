@@ -3,6 +3,7 @@ import NewArrival from './NewArrival/NewArrival'
 import BestSeller from './BestSeller/BestSeller'
 import HistoricalBook from './Historical Book/HistoricalBook'
 import BookDetail from '../SingleBookDeatail/BookDetail'
+import './home.css'
 
 export default function Home() {
   return (
