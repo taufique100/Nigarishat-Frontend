@@ -32,6 +32,10 @@
     color: #FFFFFF;
 }   
 
+.carousel .control-dots {
+    bottom: 30px !important;
+}
+
 @media screen and (max-width:576px) {
     .discount_desc > p{
         font-size: 40px !important;

@@ -1,4 +1,44 @@
 .order_main{
     background-color: #f0f0f0;
-    padding: 24px 24px;
+    padding: 14px 24px;
+}
+
+.order_main > h1{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+}
+.order_main > h1:hover{
+    cursor: pointer;
+    color: #00000070;
+}
+
+.order_main > h1 > img{
+    width: 20px;
+}
+
+.order_cards{
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+    cursor: pointer;
+}
+
+.order_cards > img{
+    height: 180px;
+    width: 120px;
+}
+
+.order_cards h1{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.order_cards h2{
+    font-size: 24px;
+    font-weight: 700;
 }

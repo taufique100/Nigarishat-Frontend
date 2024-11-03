@@ -1,8 +1,8 @@
 import React from 'react';
 import image1 from '../../assets/image.png'
 import backArrow from '../../assets/backArrow.png'
-import './Order.css';
 import { useNavigate } from 'react-router-dom';
+import '../Ordered/Order.css';
 
 const books = [
   {
@@ -97,28 +97,26 @@ const books = [
   },
 ];
 
-
-export default function Order() {
-
-  const navigate = useNavigate()
-  return (
-    <div className="order_main">
-      <h1 className='mb-3' onClick={()=>navigate('/home')}> <img src={backArrow} alt="backArrow" />Order History</h1>
-      {books.map(book => (
-        <div className="order_cards d-flex flex-column gap-4 mb-3">
-          <div key={book.id} className="d-flex align-items-start gap-4">
-            <img src={book?.image} alt={book.title} style={{ width: '100px', height: 'auto' }} />
-            <div className='flex-grow-1 align-items-center justify-content-between'>
-              <h1>{book.title}</h1>
-              <h2>₹ {book.sellPrice}/- </h2>
-              <p className='m-0 d-flex gap-2 align-items-center'>
-                <span className='original_price m-0'>₹{book.originalPrice}</span>
-                <span className='percentage_rate'>{book.discountRate}%</span>
-              </p>
+export default function SaveForLater() {
+    const navigate = useNavigate()
+    return (
+      <div className="order_main">
+        <h1 className='mb-3' onClick={()=>navigate('/home')}> <img src={backArrow} alt="backArrow" />Wish List</h1>
+        {books.map(book => (
+          <div className="order_cards d-flex flex-column gap-4 mb-3">
+            <div key={book.id} className="d-flex align-items-start gap-4">
+              <img src={book?.image} alt={book.title} style={{ width: '100px', height: 'auto' }} />
+              <div className='flex-grow-1 align-items-center justify-content-between'>
+                <h1>{book.title}</h1>
+                <h2>₹ {book.sellPrice}/- </h2>
+                <p className='m-0 d-flex gap-2 align-items-center'>
+                  <span className='original_price m-0'>₹{book.originalPrice}</span>
+                  <span className='percentage_rate'>{book.discountRate}%</span>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
-  );
-}
+        ))}
+      </div>
+    );
+  }

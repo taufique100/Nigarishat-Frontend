@@ -8,6 +8,7 @@ import Home from './Pages/Home/Home'
 import Order from './Pages/Ordered/Order'
 import AddToCard from './Pages/AddToCard/AddToCard'
 import './App.css'
+import SaveForLater from './Pages/SaveForLater/SaveForLater'
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
             <Route path="home/view-all" element={<ViewAllBook />} />
             <Route path="home/place-order" element={<PlaceOrder />} />
             <Route path="order" element={<Order />} />
-            <Route path="add-to-card" element={<AddToCard />} />
+            {/* <Route path="add-to-card" element={<AddToCard />} /> */}
+            <Route path="add-to-card" element={<SaveForLater />} />
           </Route>
         </Routes>
       </StoreContextProvider>
