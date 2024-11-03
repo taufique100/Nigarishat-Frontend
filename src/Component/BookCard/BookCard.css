@@ -1,0 +1,71 @@
+.books_container{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 20px;
+}
+
+.book_wapper{
+    width: 200px;
+    height: fit-content;
+    padding: 10px 10px;
+    background-color: #F4F4FF;
+    border: 1px solid #0909371A;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.card_wrapper{
+    overflow-x: auto; /* Enable horizontal scroll */
+    scroll-behavior: smooth; /* Optional for smooth scrolling */
+    white-space: nowrap; /* Prevent items from wrapping */
+    scrollbar-width: none;
+    background-color: #F4F4FF;
+}
+.card_wrapper:hover{
+    /* scrollbar-width:thin; */
+}
+
+.book_wapper:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.book_wapper > img{
+    width: 160px;
+    height: 200px;
+}
+
+.book_wapper > p{
+    margin: 0;
+}
+
+.original_price{
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+    text-decoration-line: line-through;
+}
+
+.sell_price{
+    font-size: 20px;
+    font-weight: 600;
+    color: #090937;
+}
+
+.percentage_rate{
+    color: #388e3c;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.book_title{
+    color: #3c3cf5;
+}
+
+.book_title:hover{
+    color: #4848b1;
+    cursor: pointer;
+}

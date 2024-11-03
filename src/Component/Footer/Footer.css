@@ -1,0 +1,35 @@
+.footer_container{
+    width: 100%;
+    height: fit-content;
+    padding: 40px 40px;
+    background-color: #22242a;
+}
+
+.address_wrapper{
+    width: 100%;
+
+}
+
+.address_wrapper > p{
+    font-size: 20px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.phy_address{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.phy_address > div > p,
+.phy_address > a{
+    margin: 0;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.phy_address > a{
+    text-decoration: none;
+}
