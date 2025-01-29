@@ -8,6 +8,22 @@ export default function PlaceOrder() {
     const [descountValue, setDiscountValue] = useState(48)
     const navigate = useNavigate()
 
+    const handleItemAdd=(action, e)=>{
+        if(items==0){
+            setItems(1)
+            return;
+        }
+        if(action==='change'){
+            setItems(e.target.value)
+        }
+        if(action==='dec'){
+            setItems(prev=>prev-1)
+        }
+        if(action==='inc'){
+            setItems(prev=>prev+1)
+        }
+    }
+
     return (
         <>
             <div className="order_book_price_details ">
@@ -67,12 +83,13 @@ export default function PlaceOrder() {
                                         </p>
                                     </div>
                                     <p className='mb-2'>Publication: Millat Publication</p>
+                                    <p className='mb-2'>Total Pages: 234</p>
                                 </div>
                             </div>
                             <div className='noOf_items mt-3 d-flex align-items-center gap-2'>
-                                <button onClick={()=>setItems(prev=>prev-1)} disabled={items===1}>-</button>
-                                <input value={items} onChange={()=>setItems(prev=>prev+1)} type="text" />
-                                <button onClick={()=>setItems(prev=>prev+1)}>+</button>
+                                <button onClick={(e)=>handleItemAdd('dec',1)} disabled={items===1}>-</button>
+                                <input value={items} onChange={(e)=>handleItemAdd('change',e)} type="text" />
+                                <button onClick={()=>handleItemAdd('inc',1)}>+</button>
                             </div>
                         </div>
                     </div>

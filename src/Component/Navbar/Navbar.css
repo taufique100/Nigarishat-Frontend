@@ -48,8 +48,8 @@
 }
 
 .icons-wrapper{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 38px;
     background-color: #e2e2f9;
     border-radius: 6px;
     color: #090937;
@@ -70,7 +70,7 @@
 }
 
 .nav_items_list > a{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color:#b05b06e9;
     text-decoration: none;

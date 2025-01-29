@@ -1,0 +1,32 @@
+.about_main{
+    background-color: #f0f0f0;
+    padding: 14px 24px;
+    height:fit-content;
+}
+
+.about_main h1{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #FF000095;
+}
+
+.description_para{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about_card{
+    width: 350px;
+    padding: 2px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.about_card > div{
+    border-bottom: 8px solid #c4c4c4;
+    border-top: 8px solid #C4C4C4;
+}
+
+.about_card img{
+    width: 100%;
+}

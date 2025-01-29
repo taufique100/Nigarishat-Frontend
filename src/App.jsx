@@ -9,6 +9,10 @@ import Order from './Pages/Ordered/Order'
 import AddToCard from './Pages/AddToCard/AddToCard'
 import './App.css'
 import SaveForLater from './Pages/SaveForLater/SaveForLater'
+import Profile from './Pages/Profile/Profile'
+import About from './Pages/About/About'
+import Contact from './Pages/ContactUs/Contact'
+import Circle from './Component/Circle/Circle'
 
 function App() {
 
@@ -22,10 +26,12 @@ function App() {
             <Route path="home/view-all" element={<ViewAllBook />} />
             <Route path="home/place-order" element={<PlaceOrder />} />
             <Route path="order" element={<Order />} />
-            {/* <Route path="add-to-card" element={<AddToCard />} /> */}
             <Route path="add-to-card" element={<SaveForLater />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact-us" element={<Contact />} />
           </Route>
-        </Routes>
+        </Routes>        
       </StoreContextProvider>
     </>
   )

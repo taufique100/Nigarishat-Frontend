@@ -95,8 +95,8 @@ export default function NavBar() {
             <Nav className="me-md-auto m-auto ">
               <div className='nav_items_list flex-column flex-sm-row align-items-start gap-2 gap-sm-4'>
                 <Link to={'/home'}>Home</Link>
-                <Link to={'#about'}>About</Link>
-                <Link to={'#contact-us'}>Contact Us</Link>
+                <Link to={'/about'}>About</Link>
+                <Link to={'/contact-us'}>Contact Us</Link>
               </div>
             </Nav>
             <div className="icons-groups my-3 d-sm-none d-block d-flex align-items-center justify-content-start gap-2">

@@ -6,7 +6,7 @@
 
 .books_container > div > span{
     color: #EF6B4A;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
 }
 .books_container > div > span:hover{
@@ -16,8 +16,8 @@
 }
 .books_container > div > h1{
     color: #090937;
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .card_wrapper{
