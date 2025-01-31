@@ -25,7 +25,7 @@
     scroll-behavior: smooth; /* Optional for smooth scrolling */
     white-space: nowrap; /* Prevent items from wrapping */
     scrollbar-width: none;
-    background-color: #F4F4FF;
+    background-color: #FFF;
 }
 .card_wrapper:hover{
     /* scrollbar-width:thin; */

@@ -1,0 +1,37 @@
+.favorite_card{
+    width: 250px;
+    min-height: 200px;
+    max-height: fit-content;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.favorite_main{
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+}
+
+.favorite_card > img{
+    width: 80%;
+    height: 120px;
+}
+
+.pricepara > span:first-child{
+    font-size: 14px;
+}
+
+.items-name > a{
+    color: #000000;
+    text-decoration: none;
+}
+.items-name > a:hover{
+    color: rgb(13 110 253);
+    text-decoration: underline;
+}
+
+.favorite_card svg{
+    cursor: pointer;
+}

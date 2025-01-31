@@ -5,16 +5,19 @@
 }
 
 .book_wapper{
-    width: 200px;
+    min-width: 230px;
+    max-width: 240px;
     height: fit-content;
     padding: 10px 10px;
-    background-color: #F4F4FF;
+    background-color: #FFF;
     border: 1px solid #0909371A;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: 4px;
 }
 
 .card_wrapper{
@@ -22,7 +25,7 @@
     scroll-behavior: smooth; /* Optional for smooth scrolling */
     white-space: nowrap; /* Prevent items from wrapping */
     scrollbar-width: none;
-    background-color: #F4F4FF;
+    background-color: #FFF;
 }
 .card_wrapper:hover{
     /* scrollbar-width:thin; */
@@ -31,10 +34,11 @@
 .book_wapper:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
+    scale: 1.009;
 }
 
 .book_wapper > img{
-    width: 160px;
+    width: 90%;
     height: 200px;
 }
 

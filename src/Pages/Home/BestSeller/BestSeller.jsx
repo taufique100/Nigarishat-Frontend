@@ -122,7 +122,7 @@ export default function BestSeller({ type, books }) {
                     {/* <span onClick={handleShowModal}>View All</span> */}
                     <span onClick={handleRedirectToViewAll}>View All</span>
                 </div>
-                <div className='card_wrapper px-2 py-2 d-flex gap-2'>
+                <div className='card_wrapper  py-2 d-flex gap-2'>
                     <BookCard books={bestSellers} />
                 </div>
             </div>

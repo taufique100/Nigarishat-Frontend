@@ -4,7 +4,7 @@
 }
 
 .order_main > h1{
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .order_main > h1 > img{
-    width: 20px;
+    width: 18px;
 }
 
 .order_cards{
@@ -26,6 +26,11 @@
     padding: 1rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
     cursor: pointer;
+}
+
+.order-status p{
+    font-size: 14px;
+    color: #00000070;
 }
 
 .order_cards > img{
