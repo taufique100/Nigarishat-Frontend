@@ -36,4 +36,7 @@
     .view_allcategory > div > img{
         width: 70%;
     }
+    .book_wapper{
+        width: 350px;
+    }
 }

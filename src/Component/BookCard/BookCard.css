@@ -56,7 +56,8 @@
 .sell_price{
     font-size: 16px;
     font-weight: 600;
-    color: #090937;
+    color: #b05b06e9;
+    /* color: #090937; */
 }
 
 .percentage_rate{
@@ -72,4 +73,10 @@
 .book_title:hover{
     color: #4848b1;
     cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .book_wapper{
+        max-width: 300px;
+    }
 }

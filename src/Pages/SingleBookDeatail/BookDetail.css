@@ -4,7 +4,7 @@
 
 .offcanva_title {
   color: #090937;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -22,7 +22,7 @@
 }
 
 .imageContainer > img {
-  width: 90%;
+  width: 95%;
   height: 90%;
 }
 
@@ -63,14 +63,15 @@
   font-weight: 700;
 }
 .sale_price{
-  color: #090937;
-  font-size: 24px;
+  /* color: #090937; */
+  color: #b05b06e9;
+  font-size: 22px;
   font-weight: 700;
 }
 
 .author_name{
   color: #00000099;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -93,14 +94,14 @@
 }
 
 .book_summary > h1{
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   color: #090937;
   margin-top: 10px;
 }
 
 .book_summary > p{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 

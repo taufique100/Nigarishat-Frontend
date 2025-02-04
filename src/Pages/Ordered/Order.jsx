@@ -121,8 +121,8 @@ export default function Order() {
           {/* <Dot color={'red'} size={'14px'}/> */}
           <div className='order-status d-flex flex-column justify-content-center'>
             <div className='d-flex align-items-center gap-2'>
-              {!(idx == 2 || idx == 5) && <Dot color={'green'} size={'14px'} label='Delivered'/>}
-             {(idx == 2 || idx == 5) && <Dot color={'red'} size={'14px'} label='Order Cancled'/>}
+              {!(idx == 2 || idx == 5) && <Dot color={'green'} size={'12px'} label='Delivered'/>}
+             {(idx == 2 || idx == 5) && <Dot color={'red'} size={'12px'} label='Order Cancled'/>}
             </div>
             <p className='m-0'>Friday 12 Jan 2025</p>
           </div>

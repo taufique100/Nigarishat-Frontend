@@ -15,7 +15,8 @@
 .sell_price{
     font-size: 14px;
     font-weight: 600;
-    color: #090937;
+    /* color: #090937; */
+    color: #b05b06e9;
 }
 
 .percentage_rate{

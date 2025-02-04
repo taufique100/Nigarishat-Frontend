@@ -27,7 +27,7 @@ export default function BookDetail() {
     <>
       <Offcanvas className='viewDetails_container' placement='end' show={viewAllModalShow} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title onClick={handleClose} className='d-flex align-items-center offcanva_title'><LiaAngleLeftSolid fontSize={25} />Book Details</Offcanvas.Title>
+          <Offcanvas.Title onClick={handleClose} className='d-flex align-items-center offcanva_title'><LiaAngleLeftSolid fontSize={20} />Book Details</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className='slider_conatiner d-flex align-items-start justify-content-between gap-5'>
           <div className='book-details-left_container d-flex flex-column align-items-md-start align-items-column gap-2 justify-content-center'>
